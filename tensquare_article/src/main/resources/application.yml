@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: tensquare_article
+  datasource:
+    url: jdbc:mysql://localhost:3306/tensquare_article?serverTimezone=GMT%2B8
+    password: root
+    username: root
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    lazy-loading-enabled: true
+    map-underscore-to-camel-case: true
+server:
+  port: 9001
